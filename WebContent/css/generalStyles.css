@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(110deg,  rgb(226, 159, 71),rgb(26, 24, 24) );
+}
+/*******************************Navbar************************************************/
+
+header,footer{
+    height: 80px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+}
+
+.links {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.links li{
+    list-style: none;
+    height: 100%;
+    width: 25%;
+}
+.LogIn{
+    width: 200px;
+}
+li a,.LogIn a{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(226, 159, 71);
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.links a:hover,.LogIn a:hover{
+    background-color: rgba(224, 205, 34, 0.2);
+}
+.clubs{
+    position: relative;
+}
+.clubs div{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(226, 159, 71);
+    font-weight: bold;
+    top:50px;
+    left:90%;
+}
+
+.dropDown{
+    height:0px;
+    width: 150%;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    transition:  opacity 1.5s ease-out , height 0.5s ease-in;
+}
+.dropDown li{
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+}
+.dropDownHover{
+    opacity: 1;
+    pointer-events: auto;
+}
+.dropDown li{
+    width: 100%;
+}
+.fixedDropDown{
+    z-index: 10;
+    background-color: rgb(48, 45, 45,0.6);
+}
+.fixedHeader{
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background-color: rgb(48, 45, 45,0.6);
+
+}
+/*********************************************************************************************/
+.container{
+    padding-bottom: 30px;
+    max-width: 1000px;
+    background-color:#292121;
+    margin:30px auto;
+}
+.container .cover{
+    overflow: hidden;
+    position: relative;
+}
+.container .cover:hover button{
+    visibility: visible;
+    right:calc( 50% - 46px );
+}
+.container .cover img{
+    width:100%;
+}
+.container .cover button{
+    visibility: hidden;
+    border:none;
+    padding: 16px 24px;
+    background-color: #4CAF50;
+    position: absolute;
+    top: calc( 50% - 24px );
+    right: 0px;
+    border-radius: 25px;
+    transition: right 0.5s,visibility 0.5s;
+    cursor: pointer;
+}
+.container .cover button:hover{
+    background-color: #139c18;
+}
+.container .presentation h1{
+    font-family: "comic sans ms";
+    text-align: center;
+    color:white;
+    margin:30px;
+}
+.container .presentation p{
+    color:white;
+    padding:10px 8%;
+    line-height:30px;
+
+}
+/********Start of SlideShow***************************/
+/* Slideshow container */
+
+.slide{
+    margin:30px 0px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto ;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+ 
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:  #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:#bbb ;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/********End of SlideShow***************************/
+/*******************************Footer********************************************************/
+footer{
+    height: 120px;
+    color: rgb(226, 159, 71);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+
+footer div{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div i:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+/**********************************************************************************/
+@media only screen and (max-width:1310px) {
+  .links a,.LogIn a{
+      letter-spacing: normal;
+  }
+}
+
+@media only screen and (max-width:990px) {
+    .LogIn{
+        width: 150px;
+    }
+    .links{
+        width: 386px;
+    }
+}
+ 
+
+@media only screen and (max-width:700px) {
+   header{
+       font-size: 14px;
+   }
+   footer{
+        font-size: 25px;
+    }
+    footer div{
+        width: 250px;
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    header{
+        font-size: 12px;
+    }
+    .links{
+        width: 300px;
+    }
+    li a{
+        text-align: center;
+    }
+ 
+    .LogIn{
+        width: 100px;
+    }
+  
+  
+}
+
+@media only screen and (max-width:450px){
+    .links{
+        width: 270px;
+    }
+    footer{
+        font-size: 20px;
+    }
+    footer div{
+        width: 200px;
+
+    }   
+}
+
+@media only screen and (max-width:400px){
+    header{
+        font-size: 10px;
+    }
+    .LogIn{
+        width: 80px;
+    }
+    .links{
+        width: 230px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    footer div{
+        width: 150px;
+
+    }   
+   
+}

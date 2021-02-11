@@ -1,0 +1,138 @@
+#container{
+    margin-top: 70px;
+    display: flex;
+    width: 80%;
+    margin-left:20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#addClub {
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(37, 39, 39,0.7);
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 12px;
+    left: 45%;
+    top: 40%;
+    transform: translateY(-100vh);
+    transition: transform 1.5s ease-in-out;
+    z-index: 100;
+}
+
+#addClub .close{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: rgb(240, 176, 92);
+    cursor: pointer;
+}
+
+#addClub input{
+    width: 80%;
+    height: 60px;
+    border: none;
+    background-color:transparent;
+    border-bottom: solid rgb(240, 176, 92) 2px;
+    margin-top: 70px;
+    padding: 12px;
+    outline: none;
+    color: rgb(240, 176, 92);
+    font-size: 18px;
+}
+
+#addClub input:focus {
+    border-bottom:  solid white 3px ;
+}
+
+#addClub input::placeholder{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(240, 176, 92);
+}
+
+#addClub input:focus::placeholder {
+    color: transparent;
+}
+
+#submitButton{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(226, 159, 71,0.7);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#submitButton:hover{
+    background-color: rgb(223, 217, 217,0.6);
+}
+
+#clubsContainer{
+    width: 70%;
+    /*background-color:rgb(26, 24, 24);*/
+    border-radius: 5px;
+    margin: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.club{  
+    width:60%;
+    height:100px;
+    padding: 0 50px;
+    background-color:rgb(26, 24, 24);
+    display:flex;
+    justify-content:space-between;
+    border-radius: 10px;
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+
+}
+
+.club p{
+    color:#f6fafb;
+}
+
+.club i{
+    color: rgb(197, 43, 43);
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.club i:hover{
+    color: rgb(226, 89, 89);
+}
+
+#creerButton{
+    background-color:rgb(26, 24, 24);
+    color:#f6fafb;
+    width: 180px;
+    height: 65px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897)
+}
+
+#creerButton:hover{
+    background-color:rgb(26, 24, 24,0.8);
+}

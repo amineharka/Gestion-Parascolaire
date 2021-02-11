@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital@1&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Chivo', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(110deg,  rgb(226, 159, 71) ,rgb(221, 219, 216 ));
+}
+/*******************************Navbar************************************************/
+
+header,footer{
+    height: 80px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+}
+
+.links {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.links li{
+    list-style: none;
+    height: 100%;
+    width: 25%;
+}
+.LogIn{
+    width: 200px;
+}
+li a,.LogIn a{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(226, 159, 71);
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.links a:hover,.LogIn a:hover{
+    background-color: rgba(224, 205, 34, 0.2);
+}
+.clubs{
+    position: relative;
+}
+.clubs div{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(226, 159, 71);
+    font-weight: bold;
+    top:50px;
+    left:90%;
+}
+
+.dropDown{
+    height:0px;
+    width: 150%;
+    background-color: rgb(26, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    transition:  opacity 1.5s ease-out , height 0.5s ease-in;
+}
+.dropDown li{
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+}
+.dropDownHover{
+    opacity: 1;
+    pointer-events: auto;
+}
+.dropDown li{
+    width: 100%;
+}
+.fixedDropDown{
+    z-index: 10;
+    background-color: rgb(48, 45, 45,0.6);
+}
+.fixedHeader{
+    position: fixed;
+    top:0;
+    z-index: 10;
+    background-color: rgb(48, 45, 45,0.6);
+
+}
+/*********************************************************************************************/
+.container{
+    width: 90%;
+    margin: 100px auto;
+    display: block;
+    background-color:rgb(3, 3, 3) ;
+    border: solid rgba(192, 124, 34, 0.6) 1px;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+    position: relative;
+    transition: filter 1s ease-in-out;
+    overflow: hidden;
+}
+
+
+
+/*******************************Footer********************************************************/
+footer{
+    height: 120px;
+    color: rgb(226, 159, 71);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+   
+   
+}
+
+footer div{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div i:hover{
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+/**********************************************************************************/
+@media only screen and (max-width:1310px) {
+  .links a,.LogIn a{
+      letter-spacing: normal;
+  }
+}
+
+@media only screen and (max-width:990px) {
+    .LogIn{
+        width: 150px;
+    }
+    .links{
+        width: 386px;
+    }
+}
+ 
+
+@media only screen and (max-width:700px) {
+   header{
+       font-size: 14px;
+   }
+   footer{
+        font-size: 25px;
+    }
+    footer div{
+        width: 250px;
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    header{
+        font-size: 12px;
+    }
+    .links{
+        width: 300px;
+    }
+    li a{
+        text-align: center;
+    }
+ 
+    .LogIn{
+        width: 100px;
+    }
+  
+  
+}
+
+@media only screen and (max-width:450px){
+    .links{
+        width: 270px;
+    }
+    footer{
+        font-size: 20px;
+    }
+    footer div{
+        width: 200px;
+
+    }   
+}
+
+@media only screen and (max-width:400px){
+    header{
+        font-size: 10px;
+    }
+    .LogIn{
+        width: 80px;
+    }
+    .links{
+        width: 230px;
+    }
+    footer{
+        font-size: 15px;
+    }
+    footer div{
+        width: 150px;
+
+    }   
+}
+
+/*****************************************************************************************************/
+
+.image-ensa{  
+    width:100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.features {
+    background-position: center;    
+    width: 95%;
+    margin: auto;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.features figure{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(40, 38, 34, 0.58);
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.features figure img{
+    border-radius: 50%;
+    width:150px;
+    box-shadow: black 0 0 10px;
+    
+}
+
+.features figure img:hover{
+    cursor: pointer;
+    box-shadow: rgb(201, 155, 93 ) 0 0 10px;
+}
+
+.features figcaption{
+    color:white; 
+    position: absolute;
+    top: 160px;
+    left: 30px;
+}
+
+.enactus_text{
+    color:white ;
+    position: sticky;
+}
+.description{
+    width: 80%;
+    color:white;
+    position: absolute;
+    top:10px;
+    left: 180px;
+}

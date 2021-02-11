@@ -1,0 +1,187 @@
+.container{
+    width: 60%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:rgb(3, 3, 3) ;
+    border: solid rgba(192, 124, 34, 0.6) 1px;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+    position: relative;
+    transition: filter 1s ease-in-out;
+    overflow: hidden;
+}
+
+.Slider-images{
+    display: flex;
+    width:100%;
+    height: 700px;
+    align-items: center;
+    transition: transform 2s ease-in-out;  
+}
+
+ img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#buttonLeft,#buttonRight{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color:rgb(226, 159, 71,0.5);
+    color:rgb(12, 11, 8); 
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#buttonLeft:hover,#buttonRight:hover{
+    background-color: rgb(247, 218, 175);
+    
+}
+
+#buttonRight{
+    position: absolute;
+    top:280px;
+    right: 30px;
+}
+
+#buttonLeft{
+    position: absolute;
+    top:280px;
+    left: 30px;
+}
+
+#circles{
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left:35%;
+    top: 610px;
+    
+}
+#circles div{
+    width: 20px;
+    height: 20px;
+    border:solid  rgb(226, 159, 71,0.5) 2px;
+    border-radius: 10px;
+}
+#circles div:hover{
+    background-color: rgb(226, 159, 71);
+}
+
+.ourApp{
+    width: 90%;
+    padding: 40px;
+    color: rgb(226, 159, 71);
+    border: solid rgba(192, 124, 34, 0.6) 1px;
+    box-shadow: 9px 9px 6px 2px rgba(192, 124, 34, 0.6);
+    margin:40px auto;
+    border-radius: 10px;
+    
+}
+.ourApp h1{
+    margin-bottom: 20px;
+}
+/*************************************************************************************/
+form{
+    height: 400px;
+    width: 30%;
+    margin: 10px auto;
+    background: linear-gradient(110deg, rgba(60, 58, 58, 0.7) 80%,rgb(226, 159, 71) 15%);
+    box-shadow: 5px 4px 10px 1px rgb(9, 0, 0);
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 1.5s ease-in-out;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+}
+
+form div{
+
+    font-size: 25px;
+    font-weight: bolder;
+    color:rgb(240, 176, 92);
+}
+fieldset{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+
+}
+fieldset input{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color:transparent;
+    border-bottom: solid rgb(240, 176, 92) 2px;
+    padding: 12px;
+    outline: none;
+    color: rgb(240, 176, 92);
+    font-size: 18px;
+}
+fieldset input:focus {
+    border-bottom:  solid white 3px ;
+}
+
+fieldset input::placeholder{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(240, 176, 92);
+}
+fieldset input:focus::placeholder {
+    color: transparent;
+  }
+
+button{
+    width: 150px;
+    height: 60px;
+    background-color: rgb(226, 159, 71);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(223, 217, 217,0.6);
+}
+
+form.sticky{
+    position: fixed; 
+    transform: translateX(1300px); 
+   
+}
+.blur{
+    filter: blur(15px);
+    pointer-events: none;
+
+}
+
+.close{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    color:rgb(226, 159, 71);
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}

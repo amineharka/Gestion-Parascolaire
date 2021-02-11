@@ -1,0 +1,128 @@
+#container{
+    margin-top: 70px;
+    display: flex;
+    width: 80%;
+    margin-left:20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#presentationForm {
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-color: rgb(26, 24, 24);
+    border-radius: 12px;
+    padding-bottom: 25px;
+}
+
+#presentationForm .text{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    font-size: 20px;
+    color:rgb(240, 176, 92,0.8); 
+    background-color: rgb(26, 24, 24);
+    font-weight: bolder;
+    position: relative;
+    left: 20px;  
+}
+
+.imageContainer{
+	text-align:center;
+}
+
+
+.images{
+    height: 40px;
+    width: 240px;
+    border-radius: 15px;
+    color:rgb(240, 176, 92);
+    display: flex;
+    font-size: 17px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.images span{
+    font-size: 30px;
+    color: rgb(234, 237, 238,0.8);
+}
+
+.images.logo{
+    width:170px;
+}
+
+.images:hover {
+    background-color:rgb(49, 46, 46);
+}
+
+.images p{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#presentationForm textarea,#presentationForm input{
+    width: 60%;
+    height: 60px;
+    border: none;
+    background-color:transparent;
+   border-bottom: solid rgb(43, 44, 44) 3px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+    color: #f6fafb;
+    font-size: 18px;
+}
+
+#presentationForm textarea:focus ,#presentationForm input:focus{
+    border-bottom:  solid rgb(37, 39, 39) 3px ;
+}
+
+#presentationForm input[type="file"] {
+    display: none;
+}
+
+.radio{
+	display:flex;
+	justify-content: space-around;
+	width:100%;
+	margin-top: 50px;
+    
+}
+.radio div{
+	width:auto;
+	display;inline-block;
+}
+
+
+
+button{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(223, 217, 217,0.6);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color:rgb(234, 237, 238,0.8);
+}

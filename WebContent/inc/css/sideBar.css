@@ -1,0 +1,116 @@
+.side-bar {
+    width: 18%;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    color: rgb(240, 176, 92);
+    background-color: rgb(26, 24, 24);
+    font-weight: bold;
+    box-shadow:rgba(3, 3, 3, 0.898) 2px 3px 5px 1px;
+    overflow-y:auto;
+}
+
+.side-bar::-webkit-scrollbar {
+    width: 6px;
+    background-color:black;
+}
+
+.side-bar::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 100px;
+    -webkit-box-shadow: inset 0 0 6px rgb(26, 24, 24);
+   
+}
+.side-links {
+    width: 100%;
+    padding-top: 15px;
+    list-style: none;
+   
+}
+
+.side-links a:hover {
+    background-color: rgba(224, 205, 34, 0.2);
+}
+
+.side-links li {
+    list-style: none;
+    width: 100%; 
+    cursor:pointer;
+}
+
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height:50px;
+    width: 100%;
+    padding-left: 10%;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+.menu {
+   margin-bottom:10px;
+}
+
+
+.fa-caret-right {
+    transition: transform 0.4s;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+
+.sub-menu {
+    height: auto;
+    visibility: hidden;
+    list-style: none;
+    width: 100%;
+    padding-left: 50px;
+    transition: visibility 0.4s;
+}
+
+.sub-menu li {
+    border-left: 2px solid rgb(226, 159, 71);
+}
+
+.button {
+    cursor: pointer;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    padding-left: 10%;
+    color:rgb(212, 210, 208);
+    text-decoration: none;
+    letter-spacing: 1px;
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.4s ease-out, height 0.4s ease-in;
+    font-size: 13px;
+}
+
+.ele-menu {
+    padding-left: 0px;
+}
+
+
+.open {
+    visibility: visible;
+}
+
+.openn {
+    height: 40px;
+    opacity: 1;
+}

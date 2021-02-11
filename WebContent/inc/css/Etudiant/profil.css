@@ -1,0 +1,154 @@
+
+#container{
+    margin-top: 70px;
+    display: flex;
+    width: 80%;
+    margin-left:20%;
+    justify-content: center;
+    min-height: 120vh;
+}
+
+
+
+#Infos{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    width: 85%;
+}
+
+#profil {
+    background-color: rgba(19, 18, 18);
+    color: #bcb6ae;
+    height: 400px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+}
+
+#profil h1{
+    color:#bcb6ae;
+    text-transform: uppercase;
+}
+
+#profil .row{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size:20px;
+    font-weight: bold;
+}
+
+#profil .row div{
+    width:50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#profil span{
+  color: rgb(226, 159, 71);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+button{
+    height: 60px;
+    width: 120px;
+    color:#bcb6ae;
+    font-size: 15px;
+    font-weight: bold;
+    border:none;
+    border-bottom: 1px solid #bcb6ae;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover{
+    background-color: rgba(245, 239, 232, 0.2);
+}
+
+#formulaire{
+    border-radius: 10px;
+    height: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color:rgb(26, 24, 24);
+    transition: height 1s ease-in-out, opacity 0.5s ease-out;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    box-shadow: 5px 4px 10px 1px rgba(3, 3, 3, 0.897);
+    position: relative;
+}
+
+#formulaire p{
+    color: #bcb6ae;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#formulaire div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-out 0.4s;
+}
+
+#formulaire input{
+    width: 70%;
+    border: none;
+    background-color:transparent;
+    border-bottom: solid rgb(240, 176, 92) 1px;
+    padding: 12px;
+    outline: none;
+    color:#bcb6ae;
+    font-size: 18px;
+}
+
+#formulaire label{
+    color:  #bcb6ae;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#formulaire #formSubmit{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #bcb6ae;
+    border-bottom: 1px solid  #bcb6ae;
+}
+
+#formulaire #formSubmit:hover{
+    background-color: rgb(240, 176, 92,0.2);
+}
+
+#formulaire #closeButton{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 20px;
+    color: rgb(240, 176, 92);
+    cursor: pointer;
+}

@@ -1,0 +1,156 @@
+#container{
+    margin-top: 130px;
+    margin-bottom:100px;
+    display: flex;
+    width: 80%;
+    margin-left:20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#activiteForm {
+    
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   background-color: rgb(26, 24, 24);
+    border-radius: 12px;
+    padding-bottom: 25px;
+}
+
+#activiteForm .text{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    font-size: 20px;
+    color:rgb(240, 176, 92,0.8); 
+    background-color: rgb(26, 24, 24);
+    font-weight: bolder;
+    position: relative;
+    left: 20px;  
+}
+
+
+.images{
+    height: 40px;
+    width: 240px;
+    border-radius: 15px;
+    color:rgb(240, 176, 92);
+    display: flex;
+    font-size: 17px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.images span{
+    font-size: 30px;
+    color: rgb(234, 237, 238,0.8);
+}
+
+.images.logo{
+    width:170px;
+}
+
+.images:hover {
+    background-color:rgb(49, 46, 46);
+}
+
+.images p{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#activiteForm textarea,#activiteForm input[type="text"]{
+    width: 60%;
+    height: 60px;
+    border: none;
+    background-color:transparent;
+   border-bottom: solid rgb(43, 44, 44) 3px;
+    padding: 12px;
+    font-size: 15px;
+    outline: none;
+    color: #f6fafb;
+    font-size: 18px;
+}
+
+#activiteForm textarea:focus ,#activiteForm input:focus{
+    border-bottom:  solid rgb(37, 39, 39) 3px ;
+}
+
+#activiteForm input[type="file"] {
+    display: none;
+}
+
+.radio{
+	display:flex;
+	justify-content: space-around;
+	width:100%;
+	margin-top: 50px;
+	align-items:center;
+    
+}
+.radio div{
+
+	display:flex;
+	width:20%;
+	align-items:center;
+	justify-content:space-around;
+}
+
+
+
+
+
+button,.buttons a {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(223, 217, 217,0.6);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color:rgb(234, 237, 238,0.8);
+}
+
+.buttons{
+	display:flex;
+	justify-content:space-evenly;
+	width:100%;
+}
+
+.buttons a{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:red;
+	
+}
+.buttons a:hover{
+	background-color:#ff0000ed;
+}
+
+
+
+
+
+
+
+
